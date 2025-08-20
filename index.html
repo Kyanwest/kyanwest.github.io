@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kyan West — Portfolio</title>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;line-height:1.6;margin:0}
+    header,section{max-width:960px;margin:0 auto;padding:24px}
+    header{padding-top:56px}
+    nav a{margin-right:16px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+    .card{border:1px solid #e5e7eb;border-radius:12px;padding:16px}
+    img{max-width:100%;border-radius:8px}
+    footer{padding:40px 24px;color:#6b7280;text-align:center}
+    .tag{font-size:12px;background:#eef2ff;color:#3730a3;border-radius:999px;padding:2px 8px;margin-left:8px}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Kyan West <span class="tag">Aero/Mech</span></h1>
+    <p>Mechanical/Aerospace engineering student — CAD • FEA • testing • hands-on build.</p>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="resume.pdf">Résumé (PDF)</a>
+      <a href="mailto:hello@kyanwest.com">Contact</a>
+    </nav>
+  </header>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>1 MN Horizontal Firing Brace</h3>
+        <p>Designed & fabricated structural brace (I-beams + plate). SolidWorks FEA → SF>2, ~1 mm max deflection. Welded, bolted, validated under repeated load.</p>
+        <ul>
+          <li>CAD + linear static FEA</li>
+          <li>MIG welding & assembly</li>
+          <li>Tested on rig</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>[Project 2]</h3>
+        <p>One-sentence problem + outcome. Add 1–3 bullets (tools, results, what you owned).</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>Short bio + interests (controls, propulsion, testing). Links: <a href="https://github.com/kyanwest">GitHub</a> • <a href="https://www.linkedin.com/">LinkedIn</a></p>
+  </section>
+
+  <footer>© <span id="y"></span> Kyan West</footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
